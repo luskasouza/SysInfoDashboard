@@ -182,9 +182,9 @@ class MainWindow(QMainWindow):
                 header.resizeSection(col, default_width)
 
 def main():
-    """
+    ```
     Função principal para iniciar a aplicação PyQt5.
-    """
+    ``
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
