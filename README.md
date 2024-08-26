@@ -5,18 +5,33 @@ Uma aplicação GUI em PyQt5 para exibir informações detalhadas do sistema, co
 bem como o status da conexão de rede e a data/hora atual.
 
 Dependências:
-- PyQt5
-- psutil
-- requests
+- PyQt5: Para criar a interface gráfica do usuário.
+- psutil: Para obter informações sobre o uso do sistema (CPU, memória, armazenamento).
+- requests: Para verificar a conexão com a internet.
+
+Requisitos:
+- Python 3.6 ou superior
 
 Importação de módulos:
 - sys: Para manipulação de argumentos e saída padrão.
 - platform: Para obter informações sobre o sistema operacional.
-- psutil: Para obter informações sobre o uso do sistema (CPU, memória, armazenamento).
+- psutil: Para obter informações sobre o uso do sistema.
 - datetime: Para manipular e formatar data e hora.
 - requests: Para verificar a conexão com a internet.
 - PyQt5.QtWidgets: Para criar a interface gráfica.
 - PyQt5.QtCore: Para temporizador e manipulação de eventos.
+
+Funções:
+- mostrar_informacoes_do_sistema: Obtém informações detalhadas sobre o sistema, incluindo CPU, memória e armazenamento.
+- verificar_conexao: Verifica a conexão com a internet tentando acessar o Google.
+- update_status: Atualiza os rótulos de data/hora, diretório inicial e status da conexão de rede.
+- populate_table: Preenche a tabela com as informações do sistema obtidas pela função `mostrar_informacoes_do_sistema`.
+
+Classe:
+- MainWindow: Classe principal da janela da aplicação que exibe as informações do sistema.
+
+Função principal:
+- main: Inicia a aplicação PyQt5.
 """
 
 import sys
